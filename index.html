@@ -17,7 +17,7 @@ need to load. You'll see a lot of <link>s to CSS files for styles and
 <html>
 <head>
   <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/kaushan-script" type="text/css"/>
-
+  <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
   <!-- This tells the browser how to read the document. -->
   <meta charset="utf-8">
 
@@ -26,6 +26,9 @@ need to load. You'll see a lot of <link>s to CSS files for styles and
 
   <!-- Load the page styles. -->
   <link href="css/style.css" rel="stylesheet">
+  
+  
+  <script src="js/modernizr.js"></script> <!-- Modernizr -->
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script>
@@ -70,12 +73,12 @@ need to load. You'll see a lot of <link>s to CSS files for styles and
   <div class="nav">
     <ul>
       
-      <li style="float:right" class="contact"><a href="#section-six">Contact</a></li>
       <li style="float:right" class="publications"><a href="#section-five">Publications</a></li>
       <li style="float:right" class="education"><a href="#section-four">Education</a></li>
       <li style="float:right" class="awards"><a href="#section-three">Awards</a></li>
       <li style="float:right" class="work"><a href="#section-two">Work</a></li>
       <li style="float:right" class="interest"><a href="#section-one">Interest</a></li>
+      <li style="float:right" class="about"><a href="#section-about">About</a></li>
       <a class="home" href="#top">AGA </a>
     </ul>
   </div>
@@ -90,32 +93,97 @@ need to load. You'll see a lot of <link>s to CSS files for styles and
     website. Your code will add information to each of the sections of the
     resume below. You can pretty easily figure out what each section will
     display by looking at the id or at what's written between the <h2> tags.
+    <img src=images/DA3.jpg ><h3> Data Analysis </h3><r> <a>"Machine learning, statistics, pattern recognition" </a>
     -->
     <div id="header" class="center-imag clear-fix">
       <ul id="topContacts" class="flex-box"></ul>
     </div>
     <div style="clear: both;"></div>
+    
+    <div id="section-about">
+        <!-- Content Here -->
+        <div id="about" class="white">
+          
+         <h2>About me</h2>
+
+         <ul>
+      
+          <li ><a href="https://es.linkedin.com/in/ana-gomez-andrades"> <span class="fa-stack fa-lg" >
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                  
+                </span> </a></li>
+          <li ><a href="https://scholar.google.es/citations?hl=en&user=lk0UiTEAAAAJ&view_op=list_works&gmla=AJsN-F5Zih6fqosV6mGZ8AJBxX9HsyIO2zZR0vflCZrL6JfTADkDu3CzGM_00j5vzrnc3VAkULximzWILoHrpppSlw46K2zngw"><span class="fa-stack fa-lg" >
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-google fa-stack-1x fa-inverse"></i>
+                </span> </a></li>
+          <li><a href="https://github.com/agaspain"><span class="fa-stack fa-lg" >
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                </span></a> </li>
+        </ul>
+
+        </div>
+      </div>
+
     <div id="section-one">
       <!-- Content Here -->
       <div id="interest" class="white">
         <h2 >Interests</h2>
-        <div id="container">
-          <div><img src=images/DA3.jpg ><h3> Data Analysis </h3><r> <a>"Machine learning, statistics, pattern recognition" </a> </div>
-          <div><img src=images/code3.jpg ><a>"Java, Python" </a> </div>
-          <div><img src=images/net3.jpg ><a>"Mobile network optimization, VoLTE, 3GPP" </a> </div>
+        <div id="container" >
+          <div> <span class="fa-stack fa-5x" >
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-bar-chart fa-stack-1x fa-inverse"></i>
+                </span> 
+                <h3> Data Analysis </h3><r>
+                <a>Machine learning, statistics, pattern recognition </a></div>
+          <div><span class="fa-stack fa-5x" >
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-code fa-stack-1x fa-inverse"></i>
+                </span> 
+                <h3> Code </h3><r>
+                <a>Java, Python </a> </div>
+          <div><span class="fa-stack fa-5x" >
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-mobile fa-stack-1x fa-inverse"></i>
+                </span>
+                <h3> Mobile networks </h3><r>
+                <a>Root Cause Analysis, Optimization</a></div>
         </div>
       </div>
     </div>
+    
     <div id="section-two">
       <!-- Content Here -->
-      <div id="projects">
-        <h2>Projects</h2>
+      <div id="projects" class="gray">
+        
+       <h2>Work</h2>
       </div>
+    </div>
+    <div id="section-three">
+          <!-- Content Here -->
+      <div id="awards" class="white">
+        
+       <h2>Awards</h2>
+      </div>
+
+    </div>
+    <div id="section-four">
+        <!-- Content Here -->
       <div id="education" class="gray">
         <h2>Education</h2>
       </div>
+      </div>
+    <div id="section-five">
+        <!-- Content Here -->
+      <div id="education" class="gray">
+        <h2>Publications</h2>
+      </div>
+    </div>
+    <div id="section-six">
+        <!-- Content Here -->
       <div id="mapDiv">
-        <h2>Where I've Lived and Worked</h2>
+        <h2>Contact</h2>
       </div>
       <div id="lets-connect" class="dark-gray">
         <h2 class="orange center-text">Let's Connect</h2>
