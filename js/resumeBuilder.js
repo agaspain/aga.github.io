@@ -36,7 +36,7 @@ $("#header").prepend(formattedName, formattedRole);
 
 
 
-$("#main").append(internationalizeButton);
+
 //$("#header").append(HTMLskillsStart);
 /*
 if (!bio.skills.empty){
@@ -52,33 +52,33 @@ if (!bio.skills.empty){
 var work = {
 	"jobs" : [
 	{
-		"employer" : "Innovati",
-		"title" : "Data scientist",
+		"employer" : "Ericsson/Experis IT",
+		"title" : "Science Engineer",
 		"location" : "Málaga",
-		"dates": "2016-Present",
-		"description" : "ooooooooooooooo"
+		"dates": "Dic 2016-Present",
+		"description" : ""
 	},
 	{
-		"employer" : "Universidad de Málaga",
-		"title" : "Data scientist",
+		"employer" : "Ericsson/University of Malaga",
+		"title" : "R&D Telecommunication Engineer",
 		"location" : "Málaga",
-		"dates": "2012-2016",
-		"description" : "ooooooooooooooo"
+		"dates": "Sep 2012- Nov 2016",
+		"description" : ""
 	},
 	{
-		"employer" : "Universidad de Alcalá",
+		"employer" : "University of Alcala",
 		"title" : "Researcher",
 		"location" : "Madrid",
 		"dates": "2011",
-		"description" : "ooooooooooooooo"
+		"description" : ""
 	}
 	]
 };
 
-function displaywork(){
+/*function displaywork(){
 
 for (indWork in work.jobs){
-	/*var formattedWorkTitle= HTMLworkTitle.replace("%data%", work.jobs[indWork].title);
+	var formattedWorkTitle= HTMLworkTitle.replace("%data%", work.jobs[indWork].title);
 	var formattedWorkEmployer= HTMLworkEmployer.replace("%data%", work.jobs[indWork].employer);
 	var formattedDates =HTMLworkDates.replace ('%data%', work.jobs[indWork].dates);
 	var formattedLocation = HTMLworkLocation.replace ('%data%', work.jobs[indWork].location);
@@ -87,14 +87,41 @@ for (indWork in work.jobs){
 
 
 	var formattedEmployerTitle=formattedWorkEmployer + formattedWorkTitle + formattedDates+ formattedLocation+ formattedDescription;
-	$("#workExperience").append(HTMLworkStart);
+	$("#section-two").append(HTMLworkStart);
 	$(".work-entry:last").append(formattedEmployerTitle);
-	*/
+	
 };
 }
 
 
-displaywork();
+displaywork();*/
+
+function isElementInViewport(el) {
+  var rect = el.getBoundingClientRect();
+  return (
+    rect.top >= 0 &&
+    rect.left >= 0 &&
+    rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+    rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+  );
+}
+
+var items = document.querySelectorAll(".timeline li");
+ 
+// code for the isElementInViewport function
+ 
+function callbackFunc() {
+  for (var i = 0; i < items.length; i++) {
+    if (isElementInViewport(items[i])) {
+      items[i].classList.add("in-view");
+    }
+  }
+}
+ 
+window.addEventListener("load", callbackFunc);
+window.addEventListener("scroll", callbackFunc);
+
+/*
 $(document).click(function(loc) {
   // your code goes here
   var x=loc.pageX;

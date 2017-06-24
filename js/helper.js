@@ -13,7 +13,7 @@ These are HTML strings. As part of the course, you'll be using JavaScript functi
 replace the %data% placeholder text you see in them.
 */
 var HTMLheaderName = ' <h1 class="center-content" id="name"> %data% </h1><r> ';
-var HTMLheaderRole = '<h6 class="pink-text"> %data% </h6><r>';
+var HTMLheaderRole = '<h6 class="shape"> %data% </h6><r>';
 
 var HTMLinterestStart = '<div class="interest-entry"></div>';
 var HTMLicon = '<div id="container"><div><img src="%data%" >';
@@ -33,8 +33,8 @@ var HTMLwelcomeMsg = '<span class="welcome-message">%data%</span>';
 var HTMLskillsStart = '<h3 id="skills-h3">Skills at a Glance:</h3><ul id="skills" class="flex-column"></ul>';
 var HTMLskills = '<li class="flex-item"><span class="white-text">%data%</span></li>';
 
-var HTMLworkStart = '<div class="work-entry"></div>';
-var HTMLworkEmployer = '<a href="#">%data%';
+var HTMLworkStart = '<div class="work-entry" ></div>';
+var HTMLworkEmployer = '<a >%data%';
 var HTMLworkTitle = ' - %data%</a>';
 var HTMLworkDates = '<div class="date-text">%data%</div>';
 var HTMLworkLocation = '<div class="location-text">%data%</div>';

@@ -22,7 +22,7 @@ need to load. You'll see a lot of <link>s to CSS files for styles and
   <meta charset="utf-8">
 
   <!-- Tells the browser what the title of this page should be. -->
-  <title>Resume</title>
+  <title>AGA</title>
 
   <!-- Load the page styles. -->
   <link href="css/style.css" rel="stylesheet">
@@ -61,6 +61,8 @@ need to load. You'll see a lot of <link>s to CSS files for styles and
 
 
 
+
+
   <!--
   Uncomment the <script> tag below when you're ready to add an interactive Google Map to your resume!
   -->
@@ -70,15 +72,14 @@ need to load. You'll see a lot of <link>s to CSS files for styles and
 </head>
 <body>
 
-  <div class="nav">
+  <div class="nav" style="z-index: 100">
     <ul>
       
-      <li style="float:right" class="publications"><a href="#section-five">Publications</a></li>
-      <li style="float:right" class="education"><a href="#section-four">Education</a></li>
+      <li style="float:right" class="contact" ><a href="https://scholar.google.es/citations?hl=en&user=lk0UiTEAAAAJ&view_op=list_works&gmla=AJsN-F5Zih6fqosV6mGZ8AJBxX9HsyIO2zZR0vflCZrL6JfTADkDu3CzGM_00j5vzrnc3VAkULximzWILoHrpppSlw46K2zngw">Publications</a></li>
       <li style="float:right" class="awards"><a href="#section-three">Awards</a></li>
       <li style="float:right" class="work"><a href="#section-two">Work</a></li>
       <li style="float:right" class="interest"><a href="#section-one">Interest</a></li>
-      <li style="float:right" class="about"><a href="#section-about">About</a></li>
+      <li style="float:right" class="interest"><a href="#section-about">About</a></li>
       <a class="home" href="#top">AGA </a>
     </ul>
   </div>
@@ -95,41 +96,43 @@ need to load. You'll see a lot of <link>s to CSS files for styles and
     display by looking at the id or at what's written between the <h2> tags.
     <img src=images/DA3.jpg ><h3> Data Analysis </h3><r> <a>"Machine learning, statistics, pattern recognition" </a>
     -->
-    <div id="header" class="center-imag clear-fix">
-      <ul id="topContacts" class="flex-box"></ul>
-    </div>
+    <div id="header" class="center-imag clear-fix"> </div>
     <div style="clear: both;"></div>
-    
-    <div id="section-about">
+  </div>
+    <div id="section-about" >
         <!-- Content Here -->
-        <div id="about" class="white">
-          
-         <h2>About me</h2>
+        <h2>About Me <i class="fa fa-user-circle-o "></i></h2>
+        <center><div  class="image-cropper">
+            <img   src="images/aga2.jpg" class="rounded" />
+        </div></center>
+        <a class="blocktext">  Ana received M.Sc. and Ph.D. degrees in telecommunication engineering from the University of Malaga, where she designed systems to apply data analysis to self-organizing networks. Currently, she is working as a research engineer designing advanced analytics solutions to improve Ericsson products. </a>
+       <ul >
+    
+        <li class="group" ><a position: absolute href="https://es.linkedin.com/in/ana-gomez-andrades"> <span class="fa-stack fa-lg" >
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                
+              </span> </a></li>
+        <li  class="group"><a href="https://scholar.google.es/citations?hl=en&user=lk0UiTEAAAAJ&view_op=list_works&gmla=AJsN-F5Zih6fqosV6mGZ8AJBxX9HsyIO2zZR0vflCZrL6JfTADkDu3CzGM_00j5vzrnc3VAkULximzWILoHrpppSlw46K2zngw"><span class="fa-stack fa-lg" >
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-google fa-stack-1x fa-inverse"></i>
+              </span> </a></li>
+        <li class="group"><a href="https://github.com/agaspain"><span class="fa-stack fa-lg" >
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+              </span></a> </li>
 
-         <ul>
-      
-          <li ><a href="https://es.linkedin.com/in/ana-gomez-andrades"> <span class="fa-stack fa-lg" >
-                  <i class="fa fa-circle fa-stack-2x"></i>
-                  <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
-                  
-                </span> </a></li>
-          <li ><a href="https://scholar.google.es/citations?hl=en&user=lk0UiTEAAAAJ&view_op=list_works&gmla=AJsN-F5Zih6fqosV6mGZ8AJBxX9HsyIO2zZR0vflCZrL6JfTADkDu3CzGM_00j5vzrnc3VAkULximzWILoHrpppSlw46K2zngw"><span class="fa-stack fa-lg" >
-                  <i class="fa fa-circle fa-stack-2x"></i>
-                  <i class="fa fa-google fa-stack-1x fa-inverse"></i>
-                </span> </a></li>
-          <li><a href="https://github.com/agaspain"><span class="fa-stack fa-lg" >
-                  <i class="fa fa-circle fa-stack-2x"></i>
-                  <i class="fa fa-github fa-stack-1x fa-inverse"></i>
-                </span></a> </li>
         </ul>
 
-        </div>
-      </div>
+      
+    </div>
+        
 
     <div id="section-one">
       <!-- Content Here -->
       <div id="interest" class="white">
-        <h2 >Interests</h2>
+        <h2 >Interests <i class="fa fa-thumbs-o-up "></i> </h2>
+        
         <div id="container" >
           <div> <span class="fa-stack fa-5x" >
                   <i class="fa fa-circle fa-stack-2x"></i>
@@ -153,44 +156,68 @@ need to load. You'll see a lot of <link>s to CSS files for styles and
       </div>
     </div>
     
-    <div id="section-two">
+    <div id="section-two" >
       <!-- Content Here -->
-      <div id="projects" class="gray">
+      <div id="projects" >
         
-       <h2>Work</h2>
+       <h2>Work <i class="fa fa-briefcase"></i></h2>
+
+          <section class="timeline">
+            <ul>
+              
+                <li >
+                  <div>
+                    <h3> Ericsson/Experis IT </h3><time><a>Dic 2016-Present</a></time> <p> Researching different use cases for current and future mobile systems where Data analytics can provide actionable insights with a strong product-focus.</p>
+                  </div>
+                </li> 
+                <li >
+                  <div>
+                    <h3> Ericsson/University of Malaga</h3> <time><a>Sep 2012- Nov 2016</a></time> <p> Developing, implementing and evaluating solutions that would provide added value to Ericsson software through the use of Data analytics with standard machine learning libraries, supervised and unsupervised methods (neural networks, clustering, ...). </p>
+                  </div>
+                </li>
+                <li >
+                  <div>
+                    <h3> University of Alcala </h3><time><a>2011</a></time> <p> Research Fellowship </p>
+                  </div>
+                </li> 
+                
+    
+            </ul>
+          </section>
+
+
       </div>
     </div>
     <div id="section-three">
           <!-- Content Here -->
       <div id="awards" class="white">
         
-       <h2>Awards</h2>
+       <h2>Awards <i class="fa fa-trophy" aria-hidden="true"></i></h2>
+
+
+        <div id="container" >
+          <div> <a href="http://www.fguma.es/">  <img height:auto width="50%"  src="images/fguma3.jpg" > 
+                <h3> Final Year Prize  </h3><r>
+                <a>  Grant given to twelve best qualificated students of the University of Málaga in 2007/08 </a></div>
+          <div><p>&nbsp;</p> <a href="http://www.aeit.es/soyteleco/la-actividad-de-las-aeits-territoriales/asociacion-andaluza-de-ingenieros-de"> <img height:"100%" width="120%" src="images/aita.jpg" >
+                <p>&nbsp;</p>
+                <h3> Second Prize Final Year Project</h3><r>
+                <a>Telecommunication Engineering degree <br /> (“San Gabriel 2013”) </a></div>
+          <div> <a href="http://www.coit-aorm.org/index.php/actualidad/noticias/239-xv-noche-de-las-telecomunicaciones-en-malaga"> <img height:auto width="100%" src="images/noche-de-las-telecomunicaciones.jpg" >
+                <h3> Best Doctoral Thesis </h3><r>
+                <a>Telecommunication Engineering <br /> (“XV Noche de las Telecomunicaciones”) </a></div>
+        </div>
+
+
       </div>
 
     </div>
-    <div id="section-four">
-        <!-- Content Here -->
-      <div id="education" class="gray">
-        <h2>Education</h2>
-      </div>
-      </div>
-    <div id="section-five">
-        <!-- Content Here -->
-      <div id="education" class="gray">
-        <h2>Publications</h2>
-      </div>
-    </div>
-    <div id="section-six">
-        <!-- Content Here -->
-      <div id="mapDiv">
-        <h2>Contact</h2>
-      </div>
-      <div id="lets-connect" class="dark-gray">
-        <h2 class="orange center-text">Let's Connect</h2>
-          <ul id="footerContacts" class="flex-box">
-        </ul>
-      </div>
-    </div>
+    
+
+    
+          
+       
+
   </div>
 
   <!-- "HTML is loaded by the browser in the order it appears in the file. If the JavaScript is loaded first and it is supposed to affect the HTML below it, it might not work, as the JavaScript would be loaded before the HTML it is supposed to work on. Therefore, putting JavaScript near the bottom of the HTML page is often the best strategy."
@@ -255,8 +282,8 @@ need to load. You'll see a lot of <link>s to CSS files for styles and
       document.getElementById('header').style.background = 'black';
     }*/
 
-    if(document.getElementsByClassName('work-entry').length === 0) {
-      document.getElementById('workExperience').style.background = 'black';
+    /*if(document.getElementsByClassName('work-entry').length === 0) {
+      document.getElementById('section-two').style.background = 'black';
     }
    
     if(document.getElementsByClassName('project-entry').length === 0) {
@@ -270,7 +297,7 @@ need to load. You'll see a lot of <link>s to CSS files for styles and
     }
     if(document.getElementById('map') === null) {
       document.getElementById('mapDiv').style.background = 'black';
-    }
+    }*/
   </script>
 </body>
 </html>
